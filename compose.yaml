@@ -1,0 +1,111 @@
+name: octave-demo
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: campus
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-campus-demo}
+      POSTGRES_DB: campus
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U campus -d campus]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  api:
+    build: ./backend
+    environment: &backend_env
+      DATABASE_URL: postgresql://campus:${POSTGRES_PASSWORD:-campus-demo}@db:5432/campus
+      FILE_DIR: /data/evidence
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-campus-demo}
+      REQUIRE_REVIEW: ${REQUIRE_REVIEW:-true}
+      RUNNER_TOKEN: ${RUNNER_TOKEN:-local-execution-token}
+      INTERNAL_TOKEN: ${INTERNAL_TOKEN:-local-worker-demo-token}
+    networks: [default, execution]
+    volumes: [evidence_data:/data/evidence]
+    depends_on:
+      db: { condition: service_healthy }
+    healthcheck:
+      test:
+        [
+          CMD,
+          python,
+          -c,
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')",
+        ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  runner:
+    build: ./backend
+    command: [python, -m, app.runner]
+    environment:
+      RUNNER_TOKEN: ${RUNNER_TOKEN:-local-execution-token}
+    networks: [execution]
+    read_only: true
+    tmpfs: ["/tmp:size=64m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 512m
+    cpus: 1
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8010/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  worker:
+    build: ./backend
+    command: [python, -m, app.worker]
+    environment: *backend_env
+    depends_on:
+      api: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, python, -m, app.healthcheck_worker]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+  web:
+    build: ./frontend
+    ports: ["127.0.0.1:${PORT:-8088}:80"]
+    depends_on:
+      api: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, wget, -q, --spider, http://127.0.0.1/api/health]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  api-tests:
+    profiles: [test]
+    build: ./backend
+    command: [python, -m, pytest, -q, -p, "no:cacheprovider"]
+    environment:
+      <<: *backend_env
+      REQUIRE_REVIEW: "false"
+    depends_on:
+      db: { condition: service_healthy }
+  browser-tests:
+    profiles: [test]
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.test
+    environment:
+      DEMO_URL: http://web
+    volumes:
+      - ./docs/screenshots:/docs/screenshots
+      - ./frontend/test-results:/app/test-results
+    depends_on:
+      web: { condition: service_healthy }
+volumes:
+  postgres_data:
+  evidence_data:
+
+networks:
+  execution:
+    internal: true

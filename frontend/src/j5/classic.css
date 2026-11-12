@@ -1,0 +1,1925 @@
+/* Classic desktop proportions derived from the version 30 reference captures. */
+.classic-shell .page-heading {
+  margin-bottom: 14px;
+}
+.classic-shell .page-heading p {
+  display: none;
+}
+.classic-shell .page-heading h1 {
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.classic-shell .eyebrow {
+  display: none;
+}
+.classic-shell main {
+  padding: 20px;
+}
+.classic-shell .page-heading .heading-actions button {
+  font-size: 12px;
+  min-height: 30px;
+  padding: 6px 10px;
+}
+.classic-shell .breadcrumb {
+  height: 42px;
+}
+.classic-shell .topbar {
+  height: 56px;
+}
+.classic-shell .sidebar {
+  top: 56px;
+}
+.classic-shell .workspace {
+  padding-top: 0;
+}
+.j5-workbench,
+.j5-logbook {
+  font:
+    13px Arial,
+    Helvetica,
+    sans-serif;
+  color: #232323;
+  background: #f2f2f2;
+  border: 1px solid #bcbcbc;
+  border-radius: 2px;
+  min-width: 0;
+  overflow: hidden;
+}
+.j5-workbench button,
+.j5-logbook button {
+  font: inherit;
+  color: #272727;
+  min-height: 26px;
+  padding: 4px 9px;
+  background: linear-gradient(#fff, #e9e9e9);
+  border: 1px solid #b9bec1;
+  border-radius: 2px;
+  gap: 5px;
+  box-shadow: none;
+}
+.j5-workbench button:hover,
+.j5-logbook button:hover {
+  background: #e6eef5;
+  border-color: #8fa9bd;
+}
+.j5-workbench button.active,
+.j5-logbook button.active {
+  background: #fff;
+  box-shadow: inset 0 -2px #6c91b4;
+  color: #274e70;
+}
+.j5-workbench input,
+.j5-workbench select,
+.j5-workbench textarea,
+.j5-logbook input,
+.j5-logbook select,
+.j5-logbook textarea {
+  font:
+    13px Arial,
+    sans-serif;
+  color: #222;
+  background: #fff;
+  border: 1px solid #b9bec1;
+  border-radius: 1px;
+  min-height: 26px;
+  padding: 4px 5px;
+  width: 100%;
+}
+.j5-workbench input[type="checkbox"],
+.j5-logbook input[type="checkbox"] {
+  width: 14px;
+  min-height: 14px;
+  accent-color: #527d9c;
+  flex-shrink: 0;
+}
+.j5-workbench fieldset,
+.j5-logbook fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.j5-workbench svg,
+.j5-logbook .j5-tools svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.j5-workbench button:disabled,
+.j5-logbook button:disabled {
+  opacity: 0.42;
+  cursor: default;
+}
+.j5-workbench a,
+.j5-logbook a {
+  color: #355c85;
+  text-decoration: none;
+}
+.j5-window-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #e5e9ed;
+  border-bottom: 1px solid #b9bec1;
+  padding: 8px 10px;
+  color: #202c37;
+}
+.j5-window-title span {
+  color: #64717e;
+  font-size: 11px;
+}
+.j5-window-title a {
+  margin-left: auto;
+  font-size: 11px;
+}
+.j5-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding: 6px;
+  background: #efefef;
+  border-bottom: 1px solid #c6c6c6;
+}
+.j5-tools i {
+  height: 22px;
+  border-left: 1px solid #ccc;
+  margin: 0 3px;
+}
+.j5-tools-end {
+  margin-left: auto;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.j5-designer-grid {
+  display: grid;
+  grid-template-columns: 210px minmax(300px, 1fr) 290px;
+  min-height: 640px;
+}
+.j5-explorer {
+  background: white;
+  border-right: 1px solid #b6bdc3;
+  font-size: 12px;
+  overflow: hidden;
+}
+.j5-pane-caption {
+  background: linear-gradient(#f6f6f6, #e0e2e4);
+  border-bottom: 1px solid #bec3c7;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.j5-tree-root {
+  display: flex;
+  gap: 4px;
+  padding: 12px 5px;
+  font-size: 11px;
+}
+.j5-explorer details {
+  margin: 4px 0;
+}
+.j5-explorer summary {
+  cursor: pointer;
+  display: list-item;
+  padding: 4px 3px 4px 0;
+  margin-left: 18px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.j5-explorer summary svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  color: #c6a34e;
+  fill: #fff0ba;
+}
+.j5-explorer details details {
+  margin-left: 14px;
+}
+.j5-explorer button {
+  display: flex;
+  border: 0;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  padding: 4px 6px 4px 24px;
+}
+.j5-explorer button.selected,
+.j5-tree-file {
+  background: #d7e7f7;
+  color: #173c62;
+}
+.j5-tree-file {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 8px;
+  margin-left: 18px;
+  overflow: hidden;
+  font-size: 11px;
+}
+.j5-tree-area {
+  padding: 5px 20px;
+  color: #526c7b;
+}
+.j5-tree-empty {
+  font-size: 11px;
+  color: #888;
+  display: block;
+  padding: 5px 12px 5px 22px;
+}
+.j5-explorer > .j5-pane-caption:not(:first-child) {
+  margin-top: 30px;
+}
+.j5-sheet-pane {
+  min-width: 0;
+  background: #d5d8dc;
+}
+.j5-document-tab {
+  background: #f8f8f8;
+  border-bottom: 1px solid #b8bdc2;
+  border-top: 2px solid #7194b7;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.j5-document-tab span {
+  margin-left: auto;
+  color: #7d7d7d;
+  font-size: 10px;
+}
+.j5-formula {
+  display: flex;
+  align-items: center;
+  background: #eee;
+  padding: 4px;
+  gap: 7px;
+  border-bottom: 1px solid #aeb4bb;
+}
+.j5-formula > span {
+  background: white;
+  border: 1px solid #bbc0c6;
+  padding: 5px 15px;
+  font-size: 11px;
+}
+.j5-formula > b {
+  font-family: serif;
+  font-style: italic;
+  color: #5b5e61;
+}
+.j5-sheet-scroll {
+  overflow: auto;
+  min-height: 520px;
+  background: #fff;
+}
+.j5-sheet {
+  width: 100%;
+  min-width: 440px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.j5-sheet th,
+.j5-sheet td {
+  border: 1px solid #c4c8cc;
+  font-weight: 400;
+  padding: 6px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.j5-sheet th:first-child {
+  width: 30px;
+  background: #eee;
+  text-align: center;
+  color: #555;
+  font-size: 11px;
+}
+.j5-sheet thead th {
+  background: #ececec;
+  text-align: center;
+  height: 22px;
+  padding: 3px;
+}
+.j5-sheet thead th:nth-child(2) {
+  width: 34%;
+}
+.j5-sheet thead th:nth-child(3) {
+  width: 32%;
+}
+.j5-sheet .j5-form-title td {
+  background: #d9e5ee;
+  color: #324e63;
+  font-weight: bold;
+  height: 34px;
+}
+.j5-sheet td {
+  height: 40px;
+}
+.j5-sheet td:first-of-type {
+  background: #e9f2f7;
+}
+.j5-sheet td button {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  white-space: normal;
+}
+.j5-sheet small {
+  display: block;
+  font-size: 10px;
+  color: #828b92;
+  margin-top: 4px;
+}
+.j5-sheet .selected td {
+  background: #eaf1f8;
+}
+.j5-sheet .selected .j5-input-cell {
+  outline: 2px solid #2d6ea8;
+  outline-offset: -2px;
+  background: white;
+}
+.j5-sheet .j5-empty-row td {
+  background: white;
+  height: 27px;
+}
+.j5-sheet-footer {
+  display: flex;
+  padding: 7px 12px;
+  background: #e6e8ea;
+  border-top: 1px solid #b7bec5;
+  font-size: 11px;
+  gap: 12px;
+}
+.j5-sheet-footer span {
+  margin-left: auto;
+  color: #656e75;
+}
+.j5-properties {
+  background: #f2f2f2;
+  border-left: 1px solid #aeb6bf;
+  min-width: 0;
+}
+.j5-property-tabs {
+  display: flex;
+  background: #e2e5e8;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #9caab7;
+}
+.j5-property-tabs button {
+  font-size: 11px;
+  padding: 6px 7px;
+  border: 0;
+  border-right: 1px solid #bcc4cc;
+  min-height: 29px;
+  border-radius: 0;
+}
+.j5-properties > fieldset {
+  padding: 8px;
+  max-height: 740px;
+  overflow: auto;
+}
+.j5-properties label {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 7px 0;
+  color: #333;
+}
+.j5-properties h4,
+.rule-group h4 {
+  background: linear-gradient(#efefef, #dfe1e3);
+  margin: 10px -3px 7px;
+  padding: 5px 7px;
+  border-top: 1px solid #bfc4c8;
+  border-bottom: 1px solid #cbd0d4;
+  font-size: 12px;
+  font-weight: 400;
+  color: #252525;
+}
+.j5-properties p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #65717a;
+  margin: 7px 0;
+}
+.j5-properties .j5-check,
+.j5-check {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+}
+.j5-section-item {
+  border-bottom: 1px solid #ccd0d5;
+  padding: 6px 0;
+}
+.rule {
+  padding: 6px;
+  background: #e6e8eb;
+  border: 1px solid #c7cbd1;
+  margin: 5px 0;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.rule input,
+.rule select:first-child,
+.rule input:last-of-type {
+  grid-column: 1/-1;
+}
+.rule button {
+  grid-column: 1/-1;
+  justify-self: end;
+  font-size: 10px;
+}
+.rule-group > fieldset > button {
+  border: 0;
+  background: none;
+  color: #315c8a;
+  font-size: 11px;
+  padding: 3px;
+}
+.j5-status {
+  border-top: 1px solid #bfc3c6;
+  background: #ededed;
+  padding: 7px 9px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  min-height: 32px;
+}
+.j5-notice {
+  padding: 9px;
+  background: #eaf1e5;
+  border-bottom: 1px solid #c5d2bb;
+  font-size: 12px;
+  color: #36532b;
+}
+.j5-error {
+  padding: 10px;
+  background: #fce9e5;
+  color: #973e2e;
+  border-bottom: 1px solid #e5b7aa;
+}
+.j5-preview {
+  background: white;
+  padding: 12px;
+  min-height: 560px;
+}
+.j5-preview.mobile {
+  max-width: 375px;
+  margin: 15px auto;
+  box-shadow: 0 0 0 6px #687582;
+  border-radius: 7px;
+}
+.j5-preview.mobile .field-grid {
+  grid-template-columns: 1fr;
+}
+.j5-preview .form-section h3 {
+  background: #b8c7d6;
+  padding: 6px;
+  font-size: 12px;
+}
+.j5-preview .field-grid {
+  gap: 12px;
+}
+.j5-preview label {
+  font-size: 12px;
+}
+.j5-preview .form-section {
+  padding: 10px 0;
+}
+.j5-preview .form-section h3 {
+  margin-bottom: 10px;
+}
+.j5-workflow-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+}
+.j5-workflow-body {
+  min-width: 0;
+}
+.j5-graph-scroll {
+  overflow: auto;
+  background: white;
+  max-height: 510px;
+  min-height: 340px;
+}
+.j5-graph {
+  background-color: #fff;
+  background-image: radial-gradient(#d5d9dd 0.7px, transparent 0.7px);
+  background-size: 14px 14px;
+  position: relative;
+}
+.j5-connectors {
+  position: absolute;
+  top: 0;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.j5-connectors path {
+  stroke: #788792;
+  stroke-width: 1.5;
+}
+.j5-connectors g {
+  cursor: pointer;
+}
+.j5-connectors g path {
+  stroke-width: 2;
+  pointer-events: stroke;
+}
+.j5-connectors text {
+  font: 11px Arial;
+  fill: #4f5962;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.j5-connectors .selected path {
+  stroke: #356b9a;
+  stroke-width: 3;
+}
+.j5-state {
+  position: absolute;
+  width: 160px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch !important;
+  justify-content: center;
+  gap: 3px !important;
+  padding: 6px 10px !important;
+  text-align: left;
+  border: 1px solid #718899 !important;
+  background: linear-gradient(#fafafa, #e0e5ea) !important;
+  border-radius: 5px !important;
+  box-shadow: 1px 2px 3px #0002 !important;
+  cursor: grab;
+  touch-action: none;
+}
+.j5-state small {
+  font-size: 8px;
+  color: #6d7e89;
+  letter-spacing: 1px;
+}
+.j5-state strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+.j5-state span {
+  font-size: 10px;
+  color: #6e7981;
+}
+.j5-state.sim-current {
+  border: 2px solid #5e9463 !important;
+  background: linear-gradient(#f7fcf6, #e4efdf) !important;
+}
+.j5-state.selected {
+  outline: 2px solid #426e9e;
+  outline-offset: 3px;
+}
+.j5-state.final {
+  border-style: double !important;
+  border-width: 3px !important;
+}
+.j5-transition-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px;
+  background: #e7e9eb;
+  border-top: 1px solid #b9c1c7;
+}
+.j5-transition-list > .j5-pane-caption {
+  width: 100%;
+}
+.j5-transition-list button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 11px;
+}
+.j5-transition-list small {
+  font-size: 10px;
+  color: #667782;
+}
+.j5-simulation {
+  padding: 9px;
+  background: #fafafa;
+  border-top: 1px solid #adb8c0;
+}
+.j5-simulation .j5-pane-caption strong {
+  background: #dce9da;
+  color: #3d6443;
+  border: 1px solid #9eb69d;
+  padding: 2px 7px;
+  margin-left: 5px;
+}
+.j5-simulation .j5-pane-caption button {
+  margin-left: auto;
+}
+.j5-sim-controls {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  gap: 9px;
+  padding: 10px 0;
+}
+.j5-sim-controls label {
+  font-size: 11px;
+  display: grid;
+  gap: 4px;
+}
+.j5-sim-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.j5-simulation p {
+  font-size: 11px;
+  color: #6a7379;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+.j5-logbook {
+  min-height: 400px;
+}
+.j5-search {
+  display: flex;
+  margin-left: 20px;
+  max-width: 340px;
+  min-width: 200px;
+}
+.j5-search input {
+  min-width: 70px;
+}
+.j5-search button {
+  border-left: 0;
+}
+.j5-view-tabs {
+  display: flex;
+}
+.j5-view-tabs button {
+  border-radius: 0;
+  margin-right: -1px;
+}
+.j5-filter-row {
+  background: #dedede;
+  padding: 6px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #cfcfcf;
+}
+.j5-filter-row > label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 6px;
+  font-size: 12px;
+}
+.j5-filter-row select {
+  width: auto;
+  max-width: 180px;
+  font-size: 12px;
+  background: #e7e7e7;
+  border-color: #c4c4c4;
+}
+.j5-filter-row input {
+  max-width: 145px;
+  font-size: 12px;
+}
+.j5-new-entry {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 8px;
+  background: #f1efef;
+  flex-wrap: wrap;
+}
+.j5-new-entry button {
+  border: 0;
+  background: none;
+  font-size: 12px;
+  padding: 4px;
+}
+.j5-new-entry svg {
+  color: #00b50b;
+  fill: #00b50b;
+  stroke: white;
+  width: 20px;
+  height: 20px;
+}
+.j5-new-entry a {
+  margin-left: auto;
+  font-size: 11px;
+}
+.j5-log-table-scroll {
+  overflow: auto;
+  background: white;
+  min-height: 300px;
+}
+.j5-log-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  min-width: 800px;
+  font-size: 12px;
+}
+.j5-log-table th {
+  background: #f1efef;
+  height: 34px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #171717;
+  text-align: left;
+  padding: 4px 6px;
+  white-space: nowrap;
+}
+.j5-log-table th button {
+  border: 0;
+  background: none;
+  font-weight: bold;
+  padding: 3px 0;
+}
+.j5-log-table td {
+  padding: 6px 7px;
+  vertical-align: top;
+  color: #171717;
+  border-bottom: 1px solid #e4e4e4;
+  line-height: 1.35;
+}
+.j5-log-table td small {
+  display: block;
+  color: #7b7b7b;
+  font-size: 10px;
+  margin-top: 4px;
+}
+.j5-log-table td.j5-date {
+  width: 115px;
+  min-width: 110px;
+}
+.j5-log-table td.j5-message {
+  width: 45%;
+  border-left: 12px solid transparent;
+}
+.j5-log-table td.priority-high {
+  border-left-color: #ead0ca;
+}
+.j5-log-table td.priority-critical {
+  border-left-color: #c18a7c;
+}
+.j5-log-table td.j5-message button {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  min-height: 0;
+  display: block;
+  font-size: 12px;
+  white-space: pre-wrap;
+  color: #111;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.j5-log-table tr:hover td:not(.j5-log-status) {
+  background: #f2f6fa;
+}
+.j5-log-table .status-open {
+  background: #e7bc63;
+  min-width: 80px;
+}
+.j5-log-table .status-on-hold {
+  background: #f2dfb4;
+  min-width: 80px;
+}
+.j5-log-table .status-closed {
+  background: white;
+}
+.j5-row-actions {
+  width: 30px;
+}
+.j5-row-actions button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #d79c78;
+}
+.j5-counts {
+  border: 0 !important;
+  background: none !important;
+  gap: 3px !important;
+  font-size: 11px !important;
+  padding: 2px !important;
+}
+.j5-counts svg:first-child {
+  color: #dc9e55;
+}
+.j5-counts svg {
+  color: #929292;
+}
+.j5-column-picker {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+.j5-empty {
+  padding: 40px;
+  color: #747474;
+  text-align: center;
+}
+.j5-detail-breadcrumb {
+  padding: 8px;
+  background: #e7e7e7;
+  color: #666;
+}
+.j5-detail-breadcrumb button {
+  border: 0;
+  background: none;
+  color: #355c85;
+}
+.j5-section-bar {
+  background: #aebdcd;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-top: 1px solid #9caebf;
+  border-bottom: 1px solid #98a9b9;
+  color: #172e42;
+}
+.j5-entry-form {
+  display: grid;
+  grid-template-columns: 290px minmax(230px, 1fr) 235px;
+  gap: 10px;
+  background: #fff;
+  padding: 10px;
+}
+.j5-entry-left label {
+  display: grid;
+  grid-template-columns: 85px minmax(0, 1fr);
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 5px;
+  background: #e2edf3;
+  min-height: 30px;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.j5-entry-left input,
+.j5-entry-left select {
+  min-width: 0;
+}
+.j5-entry-message textarea {
+  height: 240px;
+  resize: vertical;
+  border: 1px solid #b3c0c8;
+}
+.j5-entry-message small {
+  display: block;
+  color: #777;
+  font-size: 10px;
+  margin-top: 4px;
+}
+.j5-entry-meta dl {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  font-size: 11px;
+  margin: 0 0 30px;
+}
+.j5-entry-meta dt {
+  background: #e2edf3;
+  padding: 6px;
+  border: 1px solid #fff;
+  font-weight: normal;
+}
+.j5-entry-meta dd {
+  padding: 6px;
+  margin: 0;
+  background: #f6f6f6;
+  overflow-wrap: anywhere;
+}
+.j5-note-form {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: white;
+}
+.j5-note-form > label:first-child {
+  flex: 1;
+  min-width: 180px;
+  font-size: 12px;
+  display: grid;
+  gap: 5px;
+}
+.j5-note-form textarea {
+  min-height: 60px;
+}
+.j5-note-form > button {
+  margin-bottom: 2px;
+}
+.j5-notes {
+  padding: 0 10px;
+  background: white;
+}
+.j5-notes article {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 9px;
+}
+.j5-notes p {
+  margin: 0 0 5px;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+.j5-notes small {
+  font-size: 11px;
+  color: #777;
+}
+.j5-audit {
+  background: white;
+  padding: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+.j5-audit details {
+  padding: 5px;
+  font-size: 12px;
+}
+.j5-audit pre {
+  font-size: 11px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.j5-timeline {
+  background: white;
+  padding: 15px;
+  max-height: 680px;
+  overflow: auto;
+}
+.j5-timeline h3 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #4a657c;
+  border-bottom: 1px solid #adbccc;
+  padding: 8px;
+  background: #e9eff4;
+}
+.j5-event {
+  background: white !important;
+  border: 0 !important;
+  border-left: 3px solid #9cabb9 !important;
+  border-radius: 0 !important;
+  margin: 6px 0 !important;
+  padding: 8px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  text-align: left;
+  gap: 3px !important;
+  width: 100%;
+  white-space: normal !important;
+}
+.j5-event time,
+.j5-event small {
+  font-size: 10px;
+  color: #727d87;
+}
+.j5-event b {
+  font-size: 11px;
+  color: #3d5c74;
+}
+.j5-event span {
+  font-size: 12px;
+}
+.j5-calendar-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+}
+.j5-calendar-tools strong {
+  font-weight: normal;
+  min-width: 140px;
+  text-align: center;
+}
+.j5-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  background: #fff;
+}
+.j5-calendar > strong {
+  padding: 6px;
+  background: #e7ebef;
+  font-size: 12px;
+}
+.j5-calendar > div {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  min-height: 100px;
+  padding: 5px;
+  overflow: hidden;
+}
+.j5-calendar > div > span {
+  font-size: 11px;
+  color: #666;
+}
+.j5-calendar .outside {
+  background: #f1f1f1;
+}
+.j5-calendar .j5-event {
+  padding: 4px !important;
+  overflow: hidden;
+}
+.j5-calendar .j5-event span {
+  font-size: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (min-width: 1500px) {
+  .j5-designer-grid {
+    grid-template-columns: 230px minmax(400px, 1fr) 315px;
+  }
+  .j5-workflow-layout {
+    grid-template-columns: minmax(0, 1fr) 315px;
+  }
+}
+@media (max-width: 1200px) {
+  .j5-designer-grid {
+    grid-template-columns: 150px minmax(220px, 1fr) 250px;
+  }
+  .j5-workflow-layout {
+    grid-template-columns: minmax(0, 1fr) 250px;
+  }
+  .j5-entry-form {
+    grid-template-columns: 240px 1fr;
+  }
+  .j5-entry-meta {
+    grid-column: 1/-1;
+  }
+  .j5-entry-meta dl {
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10px;
+  }
+  .j5-entry-meta dt {
+    grid-row: 1;
+  }
+  .j5-entry-meta dd {
+    grid-row: 2;
+  }
+}
+@media (max-width: 800px) {
+  .classic-shell main {
+    padding: 12px;
+  }
+  .j5-designer-grid,
+  .j5-workflow-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .j5-explorer {
+    display: none;
+  }
+  .j5-properties {
+    border: 0;
+    border-top: 1px solid #abb7c2;
+  }
+  .j5-properties > fieldset {
+    max-height: none;
+  }
+  .j5-window-title {
+    flex-wrap: wrap;
+  }
+  .j5-window-title > span {
+    display: none;
+  }
+  .j5-workbench,
+  .j5-logbook {
+    width: 100%;
+  }
+  .j5-entry-form {
+    grid-template-columns: 1fr;
+  }
+  .j5-entry-meta {
+    grid-column: auto;
+  }
+  .j5-entry-meta dl {
+    grid-template-columns: 100px 1fr;
+  }
+  .j5-entry-meta dt,
+  .j5-entry-meta dd {
+    grid-row: auto;
+  }
+  .j5-sim-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .j5-search {
+    margin: 0;
+    flex: 1;
+  }
+  .j5-tools-end {
+    flex-wrap: wrap;
+  }
+  .j5-calendar {
+    min-width: 700px;
+  }
+  .j5-logbook:has(.j5-calendar) {
+    overflow-x: auto;
+  }
+  .j5-logbook .j5-tools {
+    min-width: 0;
+  }
+  .j5-status {
+    flex-wrap: wrap;
+  }
+}
+@media print {
+  .topbar,
+  .sidebar,
+  .breadcrumb,
+  .page-heading,
+  .footer,
+  .j5-tools,
+  .j5-note-form,
+  .j5-detail-breadcrumb {
+    display: none !important;
+  }
+  .workspace {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .j5-entry-form {
+    display: block;
+  }
+  .j5-entry-form > div,
+  .j5-entry-form fieldset {
+    margin: 10px 0;
+  }
+  .j5-entry-message textarea {
+    height: 300px;
+  }
+  .j5-entry-left label {
+    display: flex;
+  }
+  .j5-logbook {
+    border: 0;
+  }
+}
+
+.j5-filter-row > label {
+  flex-direction: row;
+}
+.j5-filter-row label.j5-check {
+  flex-direction: row;
+}
+.j5-workbench .j5-tools button,
+.j5-logbook .j5-tools button {
+  white-space: nowrap;
+}
+.j5-rich-content {
+  min-height: 220px;
+  background: white;
+  border: 1px solid #b9bec1;
+  padding: 10px;
+  outline: none;
+  font: 13px/1.5 Arial;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.j5-rich-content:focus {
+  outline: 2px solid #6a96b9;
+  outline-offset: -2px;
+}
+.j5-rich-content p {
+  margin: 0 0 8px;
+  color: inherit;
+}
+.j5-rich-content ul,
+.j5-rich-content ol {
+  padding-left: 24px;
+}
+.j5-rich-content h3 {
+  font-size: 16px;
+}
+.j5-rich-content blockquote {
+  border-left: 3px solid #9cabb9;
+  padding-left: 10px;
+}
+.j5-log-attachments {
+  margin-top: 12px;
+}
+.j5-upload-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  padding: 10px;
+  background: #f5f8fb;
+  border: 1px dashed #a7b4be;
+}
+.j5-attachment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #d1d9df;
+  padding: 8px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.j5-attachment button {
+  margin-left: auto;
+}
+.j5-attachment small {
+  font-size: 10px;
+}
+.j5-spreadsheet-editor {
+  background: #e8eaec;
+  min-width: 0;
+}
+.j5-spreadsheet-editor .j5-tools {
+  padding: 4px;
+}
+.j5-spreadsheet-editor .j5-tools select {
+  width: auto;
+  max-width: 240px;
+}
+.j5-spreadsheet-editor .j5-tools input[type="color"] {
+  width: 28px;
+  padding: 2px;
+}
+.j5-spreadsheet-editor .j5-tools label {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.j5-spreadsheet-editor .j5-tools input[type="number"] {
+  width: 54px;
+}
+.j5-free-grid-scroll {
+  max-height: 580px;
+  overflow: auto;
+  background: white;
+  outline: none;
+}
+.j5-free-grid {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 100%;
+  font: 12px Arial;
+}
+.j5-free-grid th {
+  background: #e8e8e8;
+  color: #555;
+  text-align: center;
+  font: 11px Arial;
+  min-width: 30px;
+  height: 24px;
+  border-right: 1px solid #bfc6cb;
+  border-bottom: 1px solid #bfc6cb;
+}
+.j5-free-grid th:first-child {
+  width: 32px;
+}
+.j5-free-grid td {
+  min-width: 50px;
+  padding: 5px;
+  border-right: 1px solid #c8cdd2;
+  border-bottom: 1px solid #c8cdd2;
+  vertical-align: middle;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  user-select: none;
+  cursor: cell;
+}
+.j5-free-grid td.range-selected {
+  box-shadow: inset 0 0 0 999px #7caddb19;
+}
+.j5-free-grid td.current {
+  outline: 2px solid #3b78b4;
+  outline-offset: -2px;
+}
+.j5-free-grid td.formula-error {
+  color: #a34332;
+}
+.j5-free-grid td input {
+  width: 100%;
+  min-width: 70px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  background: white;
+}
+.j5-free-grid.freeze-row thead {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.j5-free-grid.freeze-row tbody tr:first-child {
+  position: sticky;
+  top: 24px;
+  z-index: 2;
+  background: white;
+}
+.j5-free-grid.freeze-col tr > *:nth-child(2) {
+  position: sticky;
+  left: 32px;
+  z-index: 1;
+  background: white;
+}
+.j5-free-grid.freeze-col th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.j5-function-catalog {
+  background: #f7f9fb;
+  max-height: 230px;
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid #b7c5d1;
+}
+.j5-function-catalog p {
+  font-size: 11px;
+}
+.j5-function-catalog button {
+  font: 11px monospace;
+  display: block;
+  margin-top: 4px;
+  background: white;
+}
+.j5-sheet-runtime {
+  overflow: auto;
+  margin: 12px 0;
+}
+.j5-sheet-runtime table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 550px;
+  width: 100%;
+}
+.j5-sheet-runtime td {
+  border: 1px solid #d2d9df;
+  padding: 6px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.j5-sheet-runtime .form-section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.j5-sheet-runtime .form-section h3,
+.j5-sheet-runtime .field-grid > label > span:not(.checkbox-row) {
+  display: none;
+}
+.j5-sheet-runtime .field-grid {
+  display: block;
+}
+.j5-sheet-runtime .field-grid > label {
+  margin: 0;
+  display: block;
+}
+.j5-sheet-runtime textarea {
+  min-height: 50px;
+}
+.j5-active-branches {
+  border: 1px solid #ccd8e0;
+  padding: 9px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+.j5-active-branches span {
+  border-left: 2px solid #50926f;
+  padding-left: 7px;
+}
+.j5-hierarchy-canvas {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  overflow: auto;
+  background: #fafafa;
+  padding: 20px;
+  max-height: 650px;
+  min-height: 380px;
+}
+.j5-hnode {
+  border: 1px solid #909090;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  min-width: 170px;
+  flex-shrink: 0;
+  position: relative;
+}
+.j5-hnode > button {
+  background: none;
+  border: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 6px 10px;
+}
+.j5-hnode > button strong {
+  font: 13px Arial;
+}
+.j5-hnode > button small {
+  font-size: 9px;
+  color: #808080;
+}
+.j5-hnode.kind-compound {
+  border: 2px solid #444;
+  border-radius: 0;
+}
+.j5-hnode.kind-parallel {
+  border: 2px solid #888;
+}
+.j5-hchildren {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  padding: 15px 5px;
+}
+.j5-hchildren.compound {
+  flex-direction: column;
+  gap: 30px;
+}
+.j5-hchildren.parallel > .kind-compound {
+  border: 0;
+  border-right: 1px dashed #999;
+  border-radius: 0;
+  padding-right: 15px;
+  min-width: 180px;
+}
+.j5-hchildren.parallel > .kind-compound:last-child {
+  border-right: 0;
+}
+.j5-hchildren.parallel > .kind-compound > button strong {
+  font-style: italic;
+  color: #7a8d9c;
+}
+.j5-hnode.kind-final {
+  border: 3px double #858585;
+  border-radius: 24px;
+  min-width: 85px;
+  align-self: center;
+}
+.j5-hnode.is-active {
+  background: #ecf5e9;
+  border-color: #67955c;
+}
+.j5-hnode.is-selected > button {
+  outline: 2px solid #08a4df;
+}
+.j5-htransition {
+  padding: 8px 4px;
+  color: #7b8790;
+  font-size: 10px;
+  max-width: 250px;
+  overflow-wrap: anywhere;
+}
+.j5-hierarchy-editor {
+  padding: 8px;
+}
+.j5-hierarchy-editor label {
+  font: 12px Arial;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px 0;
+}
+.j5-hierarchy-editor .j5-check {
+  flex-direction: row;
+}
+.j5-hierarchy-editor p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #667786;
+}
+.j5-effects .rule input {
+  font: 11px monospace;
+}
+.j5-effects h4 {
+  font-size: 12px;
+}
+.j5-platform {
+  background: #f3f3f3;
+  border: 1px solid #aaa;
+  font:
+    13px Arial,
+    sans-serif;
+  color: #222;
+  margin-bottom: 20px;
+}
+.j5-platform .j5-toolbar {
+  height: auto;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.j5-platform label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.j5-platform input,
+.j5-platform select,
+.j5-platform textarea {
+  font:
+    13px Arial,
+    sans-serif;
+  border: 1px solid #aaa;
+  padding: 6px;
+  max-width: 100%;
+}
+.j5-platform button,
+.j5-platform .button {
+  font:
+    12px Arial,
+    sans-serif;
+  padding: 7px 9px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background: linear-gradient(#fff, #e4e4e4);
+  color: #222;
+  cursor: pointer;
+  text-decoration: none;
+}
+.j5-platform button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.j5-platform-message {
+  padding: 10px;
+  background: #e6f3e6;
+  border-bottom: 1px solid #a5bba5;
+}
+.j5-platform h2 {
+  font-size: 17px;
+}
+.j5-platform h3 {
+  font-size: 13px;
+}
+.j5-workspace,
+.j5-release-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  min-height: 530px;
+}
+.j5-workspace aside,
+.j5-release-layout aside {
+  background: #e9e9e9;
+  border-right: 1px solid #aaa;
+  padding: 12px;
+  overflow-wrap: anywhere;
+}
+.j5-workspace aside button,
+.j5-release-layout aside button {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 4px;
+  background: transparent;
+  border-color: transparent;
+  overflow-wrap: anywhere;
+}
+.j5-workspace aside button.active,
+.j5-release-layout aside button.active {
+  background: #d9e8f5;
+  border-color: #a0b6ca;
+}
+.j5-release-layout aside button small {
+  display: block;
+  margin-top: 5px;
+}
+.j5-workspace aside small,
+.j5-release-layout aside small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #555;
+}
+.j5-code-pane {
+  min-width: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.j5-code-pane header,
+.j5-code-pane footer {
+  padding: 10px;
+  background: #e9e9e9;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.j5-code-pane textarea {
+  resize: vertical;
+  min-height: 510px;
+  width: 100%;
+  border: 0;
+  font:
+    13px/1.55 ui-monospace,
+    monospace;
+  padding: 16px;
+  tab-size: 2;
+  white-space: pre;
+}
+.j5-release-detail {
+  padding: 20px;
+  background: white;
+  min-width: 0;
+}
+.j5-release-detail textarea {
+  min-height: 70px;
+}
+.j5-platform details {
+  border: 1px solid #ccc;
+  margin: 7px 0;
+  background: #fff;
+}
+.j5-platform summary {
+  padding: 8px;
+  cursor: pointer;
+}
+.j5-platform pre {
+  font:
+    12px/1.5 ui-monospace,
+    monospace;
+  overflow: auto;
+  max-height: 400px;
+  background: #f7f7f7;
+  padding: 10px;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.j5-diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.j5-diff > div {
+  min-width: 0;
+}
+.j5-api-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.j5-api-grid > section {
+  min-width: 0;
+  background: white;
+  border: 1px solid #bbb;
+  padding: 16px;
+}
+.j5-api-grid label {
+  margin: 14px 0;
+}
+.j5-api-url {
+  display: block;
+  overflow-wrap: anywhere;
+  padding: 10px;
+  background: #eee;
+}
+.j5-api-grid table {
+  width: 100%;
+  font-size: 12px;
+}
+.j5-api-grid td {
+  padding: 7px;
+  overflow-wrap: anywhere;
+}
+.j5-platform .j5-tools {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.j5-platform .j5-editor-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 5px;
+  background: #ddd;
+}
+.j5-platform .j5-editor-tabs .active {
+  background: #fff;
+  border-bottom-color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .j5-workspace,
+  .j5-release-layout,
+  .j5-api-grid {
+    grid-template-columns: 1fr;
+  }
+  .j5-workspace aside,
+  .j5-release-layout aside {
+    border-right: 0;
+    border-bottom: 1px solid #aaa;
+  }
+  .j5-diff {
+    grid-template-columns: 1fr;
+  }
+  .j5-platform .j5-toolbar {
+    align-items: stretch;
+  }
+  .j5-code-pane header {
+    flex-direction: column;
+  }
+}
+.j5-platform .j5-toolbar {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+.j5-platform .j5-toolbar label {
+  min-width: 210px;
+  flex: 1;
+}
+.j5-platform .j5-toolbar > select {
+  min-width: 220px;
+  flex: 1;
+}
+.j5-platform .j5-local-notice {
+  padding: 8px 10px;
+  border-bottom: 1px solid #bbb;
+  color: #596773;
+  font-size: 11px;
+}
+.j5-htransition svg {
+  display: inline;
+  vertical-align: middle;
+}
+.j5-property-tabs {
+  flex-wrap: wrap;
+}
+.j5-resource-editor {
+  padding: 10px;
+  min-width: 0;
+}
+.j5-resource-editor details {
+  border: 1px solid #bbb;
+  margin: 10px 0;
+  padding: 8px;
+}
+.j5-resource-editor select,
+.j5-resource-editor input,
+.j5-resource-editor textarea {
+  max-width: 100%;
+}
+.j5-resource-editor .j5-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.j5-form-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.j5-form-row > label {
+  flex: 1;
+  min-width: 110px;
+}
+.j5-repeat {
+  margin: 16px 0;
+  border: 1px solid #adb9c5;
+  background: white;
+}
+.j5-repeat > header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #dfe7ee;
+  padding: 10px;
+}
+.j5-repeat h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.j5-repeat > header > span {
+  margin-left: auto;
+}
+.j5-repeat-scroll {
+  overflow: auto;
+}
+.j5-repeat table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.j5-repeat td,
+.j5-repeat th {
+  border: 1px solid #c6cdd3;
+  padding: 8px;
+  min-width: 140px;
+}
+.j5-repeat th:first-child {
+  min-width: 30px;
+}
+.j5-repeat .form-section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.j5-repeat .form-section h3,
+.j5-repeat .form-section label > span:first-child:not(.checkbox-row) {
+  display: none;
+}
+.j5-repeat .field-grid {
+  display: block;
+}
+.j5-repeat textarea {
+  min-height: 45px;
+}
+.j5-repeat small {
+  display: block;
+  padding: 8px;
+}
+.j5-governance {
+  padding: 20px;
+}
+.j5-governance fieldset {
+  padding: 15px;
+  margin: 15px 0;
+  background: white;
+  border: 1px solid #bbb;
+}
+.j5-governance fieldset label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 9px 0;
+}
+.j5-governance input[type="checkbox"] {
+  width: auto;
+}
+.j5-timer {
+  padding: 10px;
+  margin-top: 12px;
+  background: #fff1cf;
+  border: 1px solid #e6cd94;
+}
+.j5-file-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  padding: 5px;
+  background: #fafafa;
+  font-size: 12px;
+  cursor: pointer;
+}
+.j5-file-button input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.j5-file-button:focus-within {
+  outline: 2px solid #3a7da9;
+}
+.j5-execution {
+  padding: 12px;
+  background: #fff;
+  border-block: 1px solid #aaa;
+}
+.j5-execution pre {
+  max-height: 200px;
+}

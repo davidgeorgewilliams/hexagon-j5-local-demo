@@ -1,0 +1,408 @@
+{
+  "name": "Property inspection and dual-authority handover",
+  "description": "Apartment and commercial facilities \u00b7 building checks, safety review and handover",
+  "fields": [
+    {
+      "id": "temperature",
+      "label": "Discharge temperature",
+      "type": "number",
+      "required": true,
+      "unit": "\u00b0C",
+      "max": 32,
+      "section": "Equipment checks",
+      "default": 24
+    },
+    {
+      "id": "condition",
+      "label": "Equipment condition",
+      "type": "choice",
+      "required": true,
+      "options": ["Normal", "Attention required", "Out of service"],
+      "section": "Equipment checks",
+      "default": "Normal"
+    },
+    {
+      "id": "access",
+      "label": "Access route is clear and safe",
+      "type": "checkbox",
+      "required": true,
+      "section": "Safety & observations",
+      "default": true
+    },
+    {
+      "id": "observations",
+      "label": "Inspection observations",
+      "type": "text",
+      "required": true,
+      "section": "Safety & observations",
+      "default": "Daily building inspection completed."
+    },
+    {
+      "id": "fahrenheit",
+      "label": "Temperature in Fahrenheit",
+      "type": "number",
+      "required": false,
+      "section": "Equipment checks",
+      "formula": "=ROUND(temperature*9/5+32,1)"
+    },
+    {
+      "id": "safety_reviewer",
+      "label": "Safety reviewed by",
+      "type": "text",
+      "required": false,
+      "section": "Review",
+      "edit_roles": ["administrator", "supervisor"]
+    },
+    {
+      "id": "safety_time",
+      "label": "Safety review time",
+      "type": "datetime",
+      "required": false,
+      "section": "Review",
+      "edit_roles": ["administrator", "supervisor"]
+    }
+  ],
+  "evidence_on_exception": true,
+  "states": ["Draft", "Submitted", "Escalated", "Approved", "Closed"],
+  "transitions": [
+    {
+      "id": "submit",
+      "label": "Submit for review",
+      "source": "Draft",
+      "target": "Submitted",
+      "roles": ["technician", "supervisor", "administrator"],
+      "require_note": false
+    },
+    {
+      "id": "approve",
+      "label": "Both authorities approved",
+      "source": "Submitted",
+      "target": "Approved",
+      "roles": ["supervisor", "administrator"],
+      "require_note": false,
+      "event": "completion"
+    },
+    {
+      "id": "return",
+      "label": "Return for correction",
+      "source": "Submitted",
+      "target": "Draft",
+      "roles": ["supervisor", "administrator"],
+      "require_note": true
+    },
+    {
+      "id": "close",
+      "label": "Close inspection",
+      "source": "Approved",
+      "target": "Closed",
+      "roles": ["supervisor", "administrator"],
+      "require_note": false
+    },
+    {
+      "id": "approve_facilities",
+      "label": "Approve facilities",
+      "source": "FacilitiesPending",
+      "target": "FacilitiesComplete",
+      "roles": ["supervisor", "administrator"],
+      "require_note": true,
+      "prompt": "Confirm the checks are complete and record your review comment.",
+      "effects": []
+    },
+    {
+      "id": "approve_safety",
+      "label": "Approve safety",
+      "source": "SafetyPending",
+      "target": "SafetyComplete",
+      "roles": ["supervisor", "administrator"],
+      "require_note": true,
+      "prompt": "Confirm the checks are complete and record your review comment.",
+      "effects": [
+        {
+          "field": "safety_reviewer",
+          "formula": "=WORKFLOW.EVENTUSER()"
+        },
+        {
+          "field": "safety_time",
+          "formula": "=WORKFLOW.EVENTTIME()"
+        }
+      ]
+    },
+    {
+      "id": "escalate_review",
+      "label": "Escalate overdue review",
+      "source": "Submitted",
+      "target": "Escalated",
+      "roles": ["supervisor", "administrator"],
+      "event": "timer",
+      "after_seconds": 3600,
+      "require_note": false,
+      "create_exception_task": false
+    },
+    {
+      "id": "resume_review",
+      "label": "Resume previous review",
+      "source": "Escalated",
+      "target": "Submitted",
+      "roles": ["supervisor", "administrator"],
+      "use_history": true,
+      "require_note": true
+    }
+  ],
+  "state_tree": [
+    {
+      "id": "Draft",
+      "label": "Preparing",
+      "kind": "compound",
+      "initial": "BuildingChecks",
+      "children": [
+        {
+          "id": "BuildingChecks",
+          "label": "Building checks",
+          "kind": "atomic"
+        }
+      ]
+    },
+    {
+      "id": "Submitted",
+      "label": "Approvals",
+      "kind": "parallel",
+      "children": [
+        {
+          "id": "FacilitiesReview",
+          "label": "Facilities authority",
+          "kind": "compound",
+          "initial": "FacilitiesPending",
+          "children": [
+            {
+              "id": "FacilitiesPending",
+              "label": "Awaiting facilities review",
+              "kind": "atomic"
+            },
+            {
+              "id": "FacilitiesComplete",
+              "label": "Facilities approved",
+              "kind": "final"
+            }
+          ]
+        },
+        {
+          "id": "SafetyReview",
+          "label": "Safety authority",
+          "kind": "compound",
+          "initial": "SafetyPending",
+          "children": [
+            {
+              "id": "SafetyPending",
+              "label": "Awaiting safety review",
+              "kind": "atomic"
+            },
+            {
+              "id": "SafetyComplete",
+              "label": "Safety approved",
+              "kind": "final"
+            }
+          ]
+        }
+      ],
+      "history": "deep"
+    },
+    {
+      "id": "Escalated",
+      "label": "Overdue review",
+      "kind": "atomic"
+    },
+    {
+      "id": "Approved",
+      "label": "Ready for handover",
+      "kind": "atomic"
+    },
+    {
+      "id": "Closed",
+      "label": "Handover complete",
+      "kind": "final"
+    }
+  ],
+  "sheet": {
+    "rows": 14,
+    "cols": 4,
+    "cells": {
+      "A1": {
+        "value": "PROPERTY INSPECTION & HANDOVER",
+        "style": {
+          "bold": true,
+          "font_size": 16,
+          "background": "#b8c9d9"
+        }
+      },
+      "A2": {
+        "value": "Discharge temperature",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B2": {
+        "field": "temperature"
+      },
+      "A3": {
+        "value": "Equipment condition",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B3": {
+        "field": "condition"
+      },
+      "A4": {
+        "value": "Access route is clear and safe",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B4": {
+        "field": "access"
+      },
+      "A5": {
+        "value": "Inspection observations",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B5": {
+        "field": "observations"
+      },
+      "A6": {
+        "value": "Temperature in Fahrenheit",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B6": {
+        "field": "fahrenheit"
+      },
+      "A7": {
+        "value": "Safety reviewed by",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B7": {
+        "field": "safety_reviewer"
+      },
+      "A8": {
+        "value": "Safety review time",
+        "style": {
+          "background": "#e2edf3"
+        }
+      },
+      "B8": {
+        "field": "safety_time"
+      },
+      "A10": {
+        "value": "Inspection status",
+        "style": {
+          "bold": true
+        }
+      },
+      "B10": {
+        "formula": "=IF(temperature>32,\"ATTENTION REQUIRED\",\"Within operating range\")",
+        "style": {
+          "background": "#fff1ca"
+        }
+      },
+      "A12": {
+        "value": "Review sequence"
+      },
+      "B12": {
+        "value": "Facilities + Safety \u2192 Handover"
+      }
+    },
+    "merges": [
+      {
+        "start": "A1",
+        "end": "D1"
+      },
+      {
+        "start": "B10",
+        "end": "D10"
+      },
+      {
+        "start": "B12",
+        "end": "D12"
+      }
+    ],
+    "col_widths": {
+      "0": 240,
+      "1": 220,
+      "2": 80,
+      "3": 180
+    },
+    "freeze_row": true
+  },
+  "option_lists": {
+    "check_results": {
+      "values": ["Pass", "Attention required"]
+    },
+    "safety_results": {
+      "extends": "check_results",
+      "values": ["Fail"]
+    },
+    "equipment_lookup": {
+      "values": ["AHU-01", "PUMP-02", "CH-01"]
+    }
+  },
+  "themes": {
+    "base": {
+      "style": {
+        "font_size": 12,
+        "color": "#273a46"
+      }
+    },
+    "campus": {
+      "extends": "base",
+      "style": {
+        "background": "#f8fbfc"
+      }
+    }
+  },
+  "theme": "campus",
+  "tables": [
+    {
+      "id": "property_checks",
+      "label": "Property inspection checks",
+      "min_rows": 0,
+      "max_rows": 100,
+      "columns": [
+        {
+          "id": "property_space",
+          "label": "Apartment / office",
+          "type": "text",
+          "required": true,
+          "section": "Check"
+        },
+        {
+          "id": "checked_equipment",
+          "label": "Equipment",
+          "type": "choice",
+          "option_list": "equipment_lookup",
+          "required": true,
+          "section": "Check"
+        },
+        {
+          "id": "check_outcome",
+          "label": "Outcome",
+          "type": "choice",
+          "option_list": "safety_results",
+          "required": true,
+          "section": "Check"
+        },
+        {
+          "id": "check_note",
+          "label": "Findings",
+          "type": "text",
+          "required": false,
+          "section": "Check"
+        }
+      ]
+    }
+  ]
+}

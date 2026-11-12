@@ -1,0 +1,347 @@
+{
+  "captured_on": "2026-11-12",
+  "source": "Official public J5 version 30 documentation",
+  "groups": [
+    {
+      "title": "Operations Logbook \u2014 list view",
+      "category": "Operations",
+      "kind": "Screen capture",
+      "note": "Compact list, List/Timeline/Calendar tabs, filter row, category add buttons, priority shading and amber status cells.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046069",
+      "images": [
+        {
+          "file": "logbook-list-01.jpg",
+          "width": 1310,
+          "height": 540,
+          "sha256": "5520a91d8074859fc2fedb281be075c0016bef4eea5d541fd7160db51dc3e53f",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046069",
+          "topic_modified": "2026-08-27",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/9DoSMmGG2z4cGQ19jpVbXA/resources/tXvhFqd~c_bx_Di~fJBVAQ-9DoSMmGG2z4cGQ19jpVbXA/content?v=c6e73b38a7ce96b5&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "Operations Logbook \u2014 new entry",
+      "category": "Operations",
+      "kind": "Screen capture",
+      "note": "Grey action toolbar; a dense three-column form; pale-blue labels, rich-text controls, attachments and handover checkbox.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046070",
+      "images": [
+        {
+          "file": "logbook-entry-04.jpg",
+          "width": 1299,
+          "height": 737,
+          "sha256": "3d57918b8cd699102ca4a125de62a13556c8f6082ea238987aa6805d90194e04",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046070",
+          "topic_modified": "2026-08-31",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/9DoSMmGG2z4cGQ19jpVbXA/resources/UQd~A8Zy2uBjW4nqr1cd8w-9DoSMmGG2z4cGQ19jpVbXA/content?v=eccc327309e6f44c&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "Work Instructions \u2014 built-in form",
+      "category": "Operations",
+      "kind": "Screen capture",
+      "note": "Work-order details and a task table with Done/Skip controls, comments, user and time columns. This is the child page beneath the link David supplied.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1051157",
+      "images": [
+        {
+          "file": "work-instruction-01.jpg",
+          "width": 934,
+          "height": 585,
+          "sha256": "2f85c3c3c3c0d02037834672917b014966804d8c904a04fdcc14cace422ed079",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1051157",
+          "topic_modified": "2025-02-13",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/9DoSMmGG2z4cGQ19jpVbXA/resources/t5v9obXQN3qZV4j8YLroVQ-9DoSMmGG2z4cGQ19jpVbXA/content?v=e16fa84053022024&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "Shift Handover \u2014 list view",
+      "category": "Operations",
+      "kind": "Screen capture",
+      "note": "Area and report-summary columns, current-handover filtering, and status backgrounds.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046054",
+      "images": [
+        {
+          "file": "handover-list-01.jpg",
+          "width": 912,
+          "height": 466,
+          "sha256": "59f86562b7ea9d65f057746e0b1eba0a09c5ef69f64d5ee196954631d88c8d91",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Shift-Operations-Management-Help/Version-30/1046054",
+          "topic_modified": "2026-05-29",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/9DoSMmGG2z4cGQ19jpVbXA/resources/UlrNRyYctoZ4DbKH5Q~wTQ-9DoSMmGG2z4cGQ19jpVbXA/content?v=c2b63d39555120dc&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "IndustraForm Designer \u2014 navigation pane",
+      "category": "Designer",
+      "kind": "UI crop",
+      "note": "Native desktop navigation tree, connection scope, application folders and operational-area hierarchy. This is a pane crop, not the whole Designer window.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1199322",
+      "images": [
+        {
+          "file": "designer-navigation-01.png",
+          "width": 280,
+          "height": 544,
+          "sha256": "26445a6c82661832adaffb964bcce821ed11951d7825d17d5483c771280eccb3",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1199322",
+          "topic_modified": "2026-08-31",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/lcwVhy655Pu58hObbvEKmw/resources/OsYS0Fi46N9WG2yqCLXDgQ-lcwVhy655Pu58hObbvEKmw/content?v=ac3f619e5b11ae26&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "IndustraForm Designer \u2014 properties tabs",
+      "category": "Designer",
+      "kind": "UI crop",
+      "note": "Properties, Sections, Roles and Form Settings tabs above the cell selector.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1199341",
+      "images": [
+        {
+          "file": "designer-cell-id-01.png",
+          "width": 454,
+          "height": 61,
+          "sha256": "48d6f7514f92218667a89971a7647a13585acdbd089d83368895661253233f02",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1199341",
+          "topic_modified": "2025-09-01",
+          "image_url": null,
+          "origin": "embedded image"
+        }
+      ]
+    },
+    {
+      "title": "IndustraForm Designer \u2014 validation and flags",
+      "category": "Designer",
+      "kind": "UI crop",
+      "note": "Collapsible Invalid If and Raise Flag If groups with Add Rule and compact operator controls.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1211631",
+      "images": [
+        {
+          "file": "designer-validation-02.png",
+          "width": 418,
+          "height": 100,
+          "sha256": "7e62be39ced964713e4f01d6d20bdb26fa9a5fff7f44e07fae87c86935b86f35",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1211631",
+          "topic_modified": "2025-09-01",
+          "image_url": null,
+          "origin": "embedded image"
+        }
+      ]
+    },
+    {
+      "title": "IndustraForm Designer \u2014 mobile-layout dialog",
+      "category": "Designer",
+      "kind": "UI crop",
+      "note": "A native dialog with Field Label and Field ID columns. It is not the main form-design grid.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1490773",
+      "images": [
+        {
+          "file": "designer-mobile-layout-05.png",
+          "width": 359,
+          "height": 258,
+          "sha256": "a8210fd405fb651f2a9f6e16132b3c67140edf00a040978f1457fa6c51a355bf",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-IndustraForm-Designer-Help/Version-30/1490773",
+          "topic_modified": "2026-08-31",
+          "image_url": null,
+          "origin": "embedded image"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Editor \u2014 documented controls",
+      "category": "Workflow",
+      "kind": "Control crops",
+      "note": "The documentation supplies these isolated control images. This is not a screenshot of a complete toolbar or editor window.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+      "images": [
+        {
+          "file": "workflow-controls-01.png",
+          "width": 57,
+          "height": 30,
+          "sha256": "284155bfa9a3a40ed9875b249938471b0c6647b0e04dea6185d4b39bb3901fa2",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-02.png",
+          "width": 30,
+          "height": 30,
+          "sha256": "93002bce989571d1d8ae1d83a076f0307f3e6b378733e7a762db6717d9446685",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-03.png",
+          "width": 20,
+          "height": 20,
+          "sha256": "1b5ca4a4e284e45005667f9ddfdac4c8c884f84597ca5a8c66f75b8257dd537d",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-04.png",
+          "width": 18,
+          "height": 18,
+          "sha256": "7d81d8eeda7eca7ebf9cff24a7633de29360a14cde70b88ad1eddcf99d13a5c2",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-05.png",
+          "width": 70,
+          "height": 30,
+          "sha256": "d29b723375d23cd495227afdba887959778c15b169da16f61e05ea6a22e46099",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-06.png",
+          "width": 23,
+          "height": 22,
+          "sha256": "8b2532698d94829321b9935ae5c45ebbef7c0baea61b7637c0f2c2b92abac0c4",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-07.png",
+          "width": 57,
+          "height": 13,
+          "sha256": "30a7e86f8837874d55e911131884289d1b9a2a648f73a617a6c4b1d2c807e321",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-08.png",
+          "width": 104,
+          "height": 30,
+          "sha256": "37347e6c127add281274839394a1e6307dd14cfbfdfe6696d50c67e9ce5cde34",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-09.png",
+          "width": 36,
+          "height": 30,
+          "sha256": "155efd62ffeffc59c8f1c68969e22624fe6ba719e9ef2e8018b65db952436d2e",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-10.png",
+          "width": 6,
+          "height": 17,
+          "sha256": "a3d385649cae706225456efa56e383870d1f081ce8d893e45eec290390c3d6d8",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        },
+        {
+          "file": "workflow-controls-11.png",
+          "width": 57,
+          "height": 13,
+          "sha256": "30a7e86f8837874d55e911131884289d1b9a2a648f73a617a6c4b1d2c807e321",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390956",
+          "topic_modified": "2025-01-16",
+          "image_url": null,
+          "origin": "embedded image"
+        }
+      ]
+    },
+    {
+      "title": "Workflow states \u2014 conceptual illustration",
+      "category": "Workflow",
+      "kind": "Conceptual diagram",
+      "note": "An explanatory diagram showing Preparing, Approved, In Progress, Reviewing and Complete. The blue blocks are a documentation illustration, not evidence of the editor\u2019s visual styling.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390958",
+      "images": [
+        {
+          "file": "workflow-states-02.png",
+          "width": 1312,
+          "height": 510,
+          "sha256": "5b67e29578e1ff0e5439c71d315ae64f49ea82814816de5f391d048ef27979a7",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1390958",
+          "topic_modified": "2024-09-27",
+          "image_url": "https://docs.hexagonppm.com/api/khub/maps/rLF1EFivwcSmmiJFoxZyew/resources/dZu_9CBPw6EPiRY5Jlm~SQ-rLF1EFivwcSmmiJFoxZyew/content?v=e5ddcf5542938861&Ft-Calling-App=ft/turnkey-portal",
+          "origin": "resource URL"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Editor \u2014 parallel approval regions",
+      "category": "Workflow",
+      "kind": "Editor canvas crop",
+      "note": "Actual grey editor canvas showing separate approval regions and completion nodes.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429646",
+      "images": [
+        {
+          "file": "workflow-parallel-detail-1.png",
+          "width": 558,
+          "height": 668,
+          "sha256": "19cdad44ee42699c94be022c2d858eb11f3235e6258b74c20eca497d3f1e302d",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429646",
+          "origin": "Unmodified embedded documentation image; fetched in browser session"
+        }
+      ]
+    },
+    {
+      "title": "Parallel approvals \u2014 runtime workflow pane",
+      "category": "Workflow",
+      "kind": "Runtime pane crop",
+      "note": "The runtime workflow tree and two independent approval actions; this is not the authoring window.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429646",
+      "images": [
+        {
+          "file": "workflow-parallel-detail-2.png",
+          "width": 294,
+          "height": 461,
+          "sha256": "0e9b8a34193e408f5987f1649849e98929d57f46b2651561991cd5d8da6f185a",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429646",
+          "origin": "Unmodified embedded documentation image; fetched in browser session"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Editor \u2014 compound Preparing state",
+      "category": "Workflow",
+      "kind": "Editor canvas crop",
+      "note": "Nested Preparing and Approvals containers, state nodes, transition labels and inherited Cancel action. This is a canvas crop, not a complete IDE window.",
+      "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429862",
+      "images": [
+        {
+          "file": "workflow-compound-detail-1.png",
+          "width": 818,
+          "height": 809,
+          "sha256": "1fbf883a970b5d8e646fb7bbdb2e8c109b01de24bc2c99f278c7529788654661",
+          "page_url": "https://docs.hexagonppm.com/r/en-US/j5-Workflow-Editor-Help/Version-30/1429862",
+          "origin": "Unmodified embedded documentation image; fetched in browser session"
+        }
+      ]
+    }
+  ]
+}

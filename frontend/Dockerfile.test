@@ -1,0 +1,9 @@
+FROM node:22-alpine
+RUN apk add --no-cache chromium font-liberation
+ENV PLAYWRIGHT_EXECUTABLE_PATH=/usr/bin/chromium-browser
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY playwright.config.ts ./
+COPY tests ./tests
+CMD ["npm", "run", "test:e2e"]
